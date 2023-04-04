@@ -1,0 +1,294 @@
+<html>
+    <head>
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="icons/favicon.png">
+		<link rel="stylesheet" href="css/css1.css">
+		<link rel="stylesheet" href="css/HomeContentCSS.css">
+		<link href='https://fonts.googleapis.com/css?family=Aclonica|Stick|Stylish|Tomorrow|Ubuntu' rel='stylesheet'>
+        <style>
+*{
+	box-sizing:border-box;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+        </style>
+        </head>
+    <body>
+		<!--top navigation-->
+		<nav>
+			<ul>
+				<li><a href ="index.html">Home</a></li>
+				<li><a href ="Gallery.html">Gallery</a></li>
+				<li><a href ="Dev.html">Developers Info</a></li>
+				<li><a href ="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--night mode-->
+			<button onclick="night()" class="nightbtn">Dark Mode</button>
+			<script>
+				function night() {
+				   var element = document.body;
+				   element.classList.toggle("dark-mode");
+				}
+				</script>
+		</nav>
+		</div>
+
+		<!--side navigation-->
+		<div>
+			<div id="mySidenav" class="sidenav">
+				<a href="#image" id="imagesidenav">Go to top</a>
+				<a href="#ety" id="etysidenav">Etymology</a>
+				<a href="#history" id="historysidenav">History</a>
+				<a href="#infodanao" id="demographsidenav">Demographics</a>
+				<a href="#brgy" id="brgysidenav">Barangays</a>
+				<a href="#gmap" id="mapsidenav">Map</a>
+			  </div>
+			  </div>
+			<!--for the image section-->
+			<!--<div class="slideshow-container">-->
+				<div>
+
+				<div class="mySlides fade">	
+				  <img src="images/danao1.jpg">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="images/danao2.jpg">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="images/danao3.jpg">
+				</div>
+
+				<p class="centered">DANAO</p>
+				</div>
+				<!--</div>-->
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				  <span class="dot"></span> 
+				</div>
+				
+				<script>
+				let slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 5000); // Change image every 2 seconds
+				}
+				</script>
+
+<!--Etymology-->
+<div id="ety">
+	<h1 class="XLFont" style="text-align: center; margin-top: 5vw;">
+		Etymology
+	</h1>
+	<p style="margin-left: 50px; margin-right: 50px; text-align: center; font-size: 2.0vw;">According to the Diccionario Español-Bisaya (1866), danao means charca, lago, laguna, pantano, estanque grande, avenida, campañas, etc. (lake, lagoon, freshet, large reservoir, arable land, field, etc.). Except that of a lake, all definitions of danao describe the municipality of Danao, with freshet being the most likely meaning. A freshet is either a sudden rise or overflow of a stream or river, or freshwater stream emptying into the sea.</p>
+	</div>
+<!--History-->
+	<div class="container">
+		<div class="row">
+			<div id="history" class="bigcolumn">
+				<h1 class="XLFont"><b>Danao</b></h1>
+				<h1 class="LFont"><b>The history of Danao</b></h1>
+				<p style="font-size: 2.0vw; text-align: justify;"><span style="font-size:3.0vw">Danao.</span> In the beginning, Danao is part of Inabanga, when the latter became a town in 1724. In 1744, Francisco Dagohoy (Sendrijas) established the First Bohol Republic at Caylagan Cave (now Francisco Dagohoy Cave) in barangay Magtangtang, located northwest of the present-day Poblacion. Magtangtang became the seat of government and headquarters of the independent Bohol that lasted for more than 85 years<span id="dots">...</span><span id="more"><br><br>In 1830, Talibon became an independent pueblo from Inabanga, and Danao was annexed to it. During the first US sponsored Census, Danao is listed as one of the barrios of Talibon with a recorded population of 585 in 1903.
+					<br><br>In 1953, the town of Victoria (now Dagohoy, Bohol) was established and 5 barangays namely Cantubod, Danao, Hibale, Santa Fe, and Santo Niño were carved out from Talibon through Executive Order No. 634 by President Elpidio Quirino to form a new municipality together with other 13 barangays in Carmen, Sierra Bullones, Trinidad, and Ubay. However, after only less than 3 years of existence, Victoria was reorganized and became the new municipality of Dagohoy. The 5 barangays were reverted to Talibon through Executive Order No. 184 by President Ramon Magsaysay and upon the recommendation of the Provincial Board of Bohol.
+					<br><br>Finally, on March 14, 1961, Danao became an independent municipality through Executive Order No. 422 by President Carlos P. Garcia. Sixteen (16) barangays from municipalities of Talibon, Inabanga, and Carmen with the seat of government at barangay Danao were organized into a new town.
+					</span></p>
+				<div class="button" onclick="myFunction()" id="rmbtn" class="button">Read more</div>
+
+<script>
+function myFunction() {
+var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+var btnText = document.getElementById("rmbtn");
+
+if (dots.style.display === "none") {
+dots.style.display = "inline";
+btnText.innerHTML = "Read more";
+moreText.style.display = "none";
+} else {
+dots.style.display = "none";
+btnText.innerHTML = "Read less";
+moreText.style.display = "inline";
+}
+}
+</script>
+
+			</div>
+			<div class="smallcolumn">
+				<img class="historyImg" src="images/danaologo.png" alt="Logo of Danao">
+				</div>
+		</div>
+	</div>
+
+<!--Demographics-->
+	<div class="container">
+		<div class="row">
+			<div id="infodanao" class="smallcolumn">
+				<img class="demoImg" src="images/danaomap.png" alt="Location of Danao on Map">
+				</div>
+				<div class="bigcolumn">
+					<h1 class="XLFontRight"><b>All about Danao</b></h1>
+					</div>
+					<p class="nrmlFontRight"><b>Mayor: </b>Jose Gonzaga Cepedoza</p>
+					<p class="nrmlFontRight"><b>Vice Mayor: </b>Albert Vitor</p>
+					<p class="nrmlFontRight"><b>Total Area: </b>162.76 km2</p>
+					<p class="nrmlFontRight"><b>Population: </b>20,245</p>
+					<p class="nrmlFontRight"><b>Economy Class: </b>4th class economy</p>
+			</div>
+		</div>
+
+		<!--barangays-->
+		<div class="container">
+			<div class="row">
+				<div id="brgy" class="bigcolumn">
+					<h1 class="XLFont"><b>Barangays</b></h1>
+					<h1 class="LFont"><b>The 17 Barangays of Danao</b></h1>
+
+					<button class="accordion">Cabatuan</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 1,428</p>
+					</div>
+
+					<button class="accordion">Cantubod</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 1,047</p>
+					</div>
+
+					<button class="accordion">Carbon</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 384</p>
+					</div>
+
+					<button class="accordion">Concepcion</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 1,623</p>
+					</div>
+
+					<button class="accordion">Dagohoy</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 659</p>
+					</div>
+
+					<button class="accordion">Hibale</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 843</p>
+					</div>
+
+					<button class="accordion">Magtangtang</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 1,256</p>
+					</div>
+
+					<button class="accordion">Nahud</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 966</p>
+					</div>
+
+					<button class="accordion">Poblacion</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 3,434</p>
+					</div>
+
+					<button class="accordion">Remedios</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 1,288</p>
+					</div>
+
+					<button class="accordion">San Carlos</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 1,170</p>
+					</div>
+
+					<button class="accordion">San Miguel</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 559</p>
+					</div>
+
+					<button class="accordion">Santa Fe</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 567</p>
+					</div>
+
+					<button class="accordion">Santo Niño</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 719</p>
+					</div>
+
+					<button class="accordion">Tabok</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 946</p>
+					</div>
+
+					<button class="accordion">Taming</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 932</p>
+					</div>
+
+					<button class="accordion">Villa Anunciado</button>
+					<div class="panel">
+					  <p class="normalPfont">Population = 112</p>
+					</div>
+
+					<script>
+						var acc = document.getElementsByClassName("accordion");
+						var i;
+						
+						for (i = 0; i < acc.length; i++) {
+						  acc[i].addEventListener("click", function() {
+							this.classList.toggle("active");
+							var panel = this.nextElementSibling;
+							if (panel.style.maxHeight) {
+							  panel.style.maxHeight = null;
+							} else {
+							  panel.style.maxHeight = panel.scrollHeight + "px";
+							} 
+						  });
+						}
+						</script>
+				</div>
+
+				<div class="smallcolumn">
+					<img class="brgySectionImg" src="images/people.png" alt="Picture of Danao Municipal Hall">
+					</div>
+			</div>
+		</div>
+
+	<!--for google map at the bottom-->
+	<div id="gmap" class="google-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103432.01704943407!2d124.2242576584434!3d9.96582879838016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa1eeabce9bf09%3A0x7a72ac07842ceea0!2sDanao%2C%20Bohol!5e0!3m2!1sen!2sph!4v1679143311900!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+	<div>
+		<p class="reference">Danao<br><br>
+		All data presented on this webpage is based on the 2020 census.<br><br><br>
+		Reference: <a href="https://en.wikipedia.org/wiki/Danao,_Bohol" class="reference">https://en.wikipedia.org/wiki/Danao,_Bohol</a>
+	</div>
+    </body>
+</html>

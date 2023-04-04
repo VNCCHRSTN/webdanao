@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.png">
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="stylesheet" href="css/css3.css">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica|Stick|Stylish|Tomorrow|Ubuntu' rel='stylesheet'>
+</head>
+<style>
+    *{
+	box-sizing:border-box;
+}
+</style>
+
+<body>
+		<!--top navigation-->
+		<nav>
+			<ul>
+				<li><a href ="index.html">Home</a></li>
+				<li><a href ="Gallery.html">Gallery</a></li>
+				<li><a href ="Dev.html">Developers Info</a></li>
+                <li><a href ="Contact.html">Contact Us</a></li>
+			</ul>
+
+			<!--night mode-->
+			<button onclick="night()" class="nightbtn">Dark Mode</button>
+
+			<script>
+				function night() {
+				   var element = document.body;
+				   element.classList.toggle("dark-mode");
+				}
+				</script>
+		
+		</nav>
+
+        <!--logo-->
+        <div class="main1">
+            <div>
+                <img class="contactlogo" src="icons/favicon.png">
+            </div>
+            <div>
+            <h1 class="cntct">Message us on:</h1>
+            </div>
+        </div>
+
+        <div class="eform">
+        <form action="mailto:vincechristian.conson@bisu.edu.ph" method="post" enctype="text/plain" id="usrform"></form>
+            Name:<br>
+            <textarea rows="4" cols="50" name="Name" form="usrform"></textarea> <br>
+            Email:<br>
+            <textarea rows="4" cols="50" name="Email" form="usrform"></textarea> <br>
+            Message:<br>
+            <textarea rows="4" cols="50" name="Comment" form="usrform"></textarea>             </div>
+            <input class="contactbtn" type="submit" value="Send" form="usrform">
+            <input class="contactbtn" type="reset" value="Reset" form="usrform">
+
+        <div class="buttoncntct">
+            <div>
+            <a href="https://m.me/vins.conson.21"><img class="img-a" src="icons/fbIcon.png"></a>
+            <a href="https://m.me/vins.conson.21"><img class="img-a" src="icons/msngricon.png"></a>
+            <a href="https://www.instagram.com/vincechrischan/"><img class="img-a" src="icons/instaicon.png"></a>
+            <a href="tel:+09974025152"><img class="img-a" src="icons/phoneicon.png"></a>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+		<link rel="icon" type="image/x-icon" href="icons/favicon.png">
+        <link rel="stylesheet" href="css/css1.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+        <link href='https://fonts.googleapis.com/css?family=Aclonica|Stick|Stylish|Tomorrow|Ubuntu' rel='stylesheet'>
+	
+    </head>
+    <style>
+*{
+	box-sizing:border-box;
+}
+
+#image{
+    float: right;
+    height: 50%;
+
+}
+p{
+    font-family: "arial";
+    color: white;
+    text-align: center;
+}
+h2{
+    color: rgb(68, 67, 67);
+    font-family: arial;
+    text-align: center;
+    font-size: 2.0vw;
+    font-weight: lighter;
+}
+#img-gal{
+    height: 24.6vw;
+}
+
+img{
+    width: 21.9vw;
+    height: 15.1vw;
+
+}
+    </style>
+    <body>
+	<!--top navigation-->
+    <nav>
+        <ul>
+            <li><a href ="index.html">Home</a></li>
+            <li><a href ="Gallery.html">Gallery</a></li>
+            <li><a href ="Dev.html">Developers Info</a></li>
+            <li><a href ="Contact.html">Contact Us</a></li>
+        </ul>
+
+        <!--night mode-->
+        <button onclick="night()" class="nightbtn">Dark Mode</button>
+
+        <script>
+            function night() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+
+    </nav>
+	</body>
+    <section>
+            <br>
+            <h2 style="margin-top: 5%; font-family: Stick;"> G A L L E R Y </h2>
+            <p class="gal">The Wonderful Town of Danao</p>
+            <div>
+    <body>
+        <div class="container">   
+        <div class= "gallery">
+            <ul>
+            <a href="images/Pauline.jpg" data-lightbox="mygallery" data-title="Danao Sea of Clouds <br><br>Courtesy: Pauline Amelinckx"><img src="images/Pauline.jpg"></a>
+            <a href="images/laagan007.jpg" data-lightbox="mygallery" data-title="Danao Sea of Clouds <br><br>Courtesy: laagan007"><img src="images/laagan007.jpg"></a>
+            <a href="images/jeckified99.jpg" data-lightbox="mygallery" data-title="Danao Sea of Clouds <br><br>Courtesy: jeckified"><img src="images/jeckified99.jpg"></a>
+            <a href="images/miemoi.jpg" data-lightbox="mygallery" data-title="Danao Sea of Clouds <br><br>Courtesy: miemoi"><img src="images/miemoi.jpg "></a>
+            <a href="images/giantswing.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: Giant Swing <br><br>Courtesy: Danao Adventure Park"><img src="images/giantswing.jpg"></a>
+            <a href="images/zipline.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: Suislide <br><br>Courtesy: Allen Maravillas"><img src="images/zipline.jpg"></a>
+            <a href="images/bungee.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: The Plunge <br><br>Courtesy: Danao Adventure Park"><img src="images/bungee.jpg"></a>
+            <a href="images/glasswalk.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: Glass Cliff Walk <br><br>Courtesy: Maria Christine Cepedoza"><img src="images/glasswalk.jpg"></a>
+            <a href="images/kayak.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: River Kayaking <br><br>Courtesy: Danao Adventure Park"><img src="images/kayak.jpg"></a>
+            <a href="images/hamster.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: Hamster Wheel <br><br>Courtesy: Danao Adventure Park"><img src="images/hamster.jpg"></a>
+            <a href="images/sky.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: Skyride <br><br>Courtesy: JERNELLE's Tickets and Tours"><img src="images/sky.jpg"></a>
+            <a href="images/root.jpg" data-lightbox="mygallery" data-title="Danao Adventure Park: Root Climbing <br><br>Courtesy: Danao Adventure Park"><img src="images/root.jpg"></a>
+        </ul>
+        </div>
+        </div>
+       
+        <script src="js/lightbox-plus-jquery.js">
+
+        </script>
+        </section>
+    </body>

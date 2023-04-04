@@ -1,0 +1,88 @@
+.contactlogo{
+    height: 9.875vw;
+    width: 9.875vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.cntct{
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Stylish;
+    font-size: 3.292vw;
+    color: gray;
+    margin-top: -10px;
+}
+
+.img-a{
+  height: 3.292vw;
+  width: 3.292vw;
+}
+
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.centertxt{
+    text-align: center;
+}
+
+.buttoncntct {
+    display: block;
+    margin-left: auto;
+    margin-top: 1%;
+    margin-right: auto;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    font-family: Tomorrow;
+    align-self: center;
+  }
+
+  form{
+    float: left;
+    margin-left: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 3.292vw;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .eform{
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: Arial;
+    font-size: 1.2vw;
+  }
+
+  .contactbtn{
+    background-color: skyblue;
+    border-radius: 50px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    font-family: Arial;
+    font-size: 1.2vw;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }

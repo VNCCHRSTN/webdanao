@@ -1,0 +1,319 @@
+	body{
+	margin:0;
+	background: #e8e4c9;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*for the top navigation*/
+nav{
+	background:#28282B;
+	width:100%;
+	overflow:auto;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+  height: 5vw;
+}
+ul{
+	margin:0;
+	padding:0;
+		list-style:none;
+}
+li{
+	float:left;
+}
+nav a{
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background: #28282B;
+	font-size:1.3vw;
+	color:white;
+	padding:1.2vw 1.2vw;
+	font-family:'Stick';
+	z-index: 100;	
+  height: 5vw;
+}
+nav a:hover{
+	background:gray;
+	color:black;
+}
+
+/*for the google map section*/
+.google-map {
+     padding-bottom: 50%;
+     position: relative;
+	 z-index: 10;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+	 z-index: 10;
+}
+
+/*stylings*/
+.responsive {
+  width: 100%;
+  height: auto;
+  filter: blur(3px);
+}
+.centered {
+  position: absolute;
+  display: block;
+  top: 30vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: green;
+  font-size: 5vw;
+  font-family: Aclonica ;
+  z-index: 20;
+  border: 0.5vw solid green;
+  padding: 1.3vw;
+  transition: 0.3s;
+  margin-bottom: 10vw;
+  background-color: rgba(232, 228, 201, 0.8);
+}
+@media(max-width:576px){
+  #mySidenav a{
+
+    visibility: hidden;
+  }
+}
+/*side navigation*/
+#mySidenav a {
+  position: fixed;
+  left: -178px;
+  transition: 0.3s;
+  padding: 1vw;
+  width: 13.68vw;
+  text-decoration: none;
+  font-size: 1.37vw;
+  color: whitesmoke;
+  border-radius: 0 5px 5px 0;
+  margin-top: 5.472vw;
+  z-index: 20;
+  font-family: Stick;
+  height: fit-content;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#imagesidenav {
+  top: 1.3vw;
+  background-color: #04AA6D;
+}
+
+#etysidenav{
+  top: 6.1vw;
+  background-color: #e77bc1
+}
+
+#historysidenav {
+  top: 10.9vw;
+  background-color: #2196F3;
+}
+
+#demographsidenav {
+  top: 15.7vw;
+  background-color: #f44336;
+}
+
+#brgysidenav{
+  top: 20.5vw;
+  background-color: #1c7369
+}
+
+#mapsidenav {
+  top: 25.3vw;
+  background-color: #FFA500
+}
+
+/*zigzag content*/
+.container{
+	padding: 4.3vw;
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.bigcolumn{
+	float: left;
+	width: 66.66666%;
+	padding: 1.vw3;
+}
+
+.smallcolumn{
+	float: left;
+	width: 33.33333%;
+	padding: 1.3vw;
+}
+/*text stylings*/
+.LFont{
+	font-size: 4.0vw;
+	font-family: Stylish;
+}
+
+.XLFont{
+	font-size: 4.378vw;
+	font-family: Stick;
+	color: #2a7704;
+}
+
+.XLFontRight{
+	text-align: right;
+	font-size: 4.3vw;
+	font-family: Stick;
+	color: #2a7704;
+}
+
+.LFontRight{
+	text-align: right;
+	font-size: 48px;
+	font-family: Stylish;
+}
+
+.nrmlFontRight{
+	text-align: right;
+	font-size: 2.0vw;
+	font-family: Ubuntu;
+	margin-top: 0px;
+}
+
+.normalPfont{
+	font-size: 1.3vw;
+	font-family: Ubuntu;
+	color: black;
+}
+
+p{
+	font-family: Stylish;
+	font-size: 24px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 0.958vw 1.915vw;
+  font-size: 1.716vw;
+  cursor: pointer;
+  background-color: #04AA6D;
+  width: fit-content;
+  font-family: Tomorrow;
+}
+
+#more{
+	display: none;
+}
+
+.historyImg{
+	margin-top: 5.4vw;
+	width: 30.7vw;
+	height: 30.7vw;
+	border-radius: 50%;
+}
+
+.demoImg{
+	margin-top: 4.7vw;
+	width: 30.7vw;
+	height: 30.7vw;
+}
+
+
+.accordion {
+  background-color: #A67B5B;
+  color: black;
+  cursor: pointer;
+  padding: 1.2vw;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.3vw;
+  transition: 0.4s;
+  font-family: Ubuntu;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #6F4E37;
+}
+
+.panel {
+  padding: 0 1.2vw;
+  background-color: #e5af85;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 0.8vw;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.brgySectionImg{
+	margin-top: 80%;
+	width: 30.7vw;
+	height: 30.7vw;
+}
+
+.reference{
+	font-family: Arial;
+	font-size: 1.0vw;
+	color: white;
+	text-align: center;
+	background-color: #28282B;
+	height: auto;
+  padding-bottom: 0.6vw;
+	margin-top: 0%;
+  margin-bottom: 0px;
+	padding-top: 0.6vw;
+}
+.gal{
+  font-size: 20px;
+	font-family: Ubuntu;
+  color: green;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.nightbtn{
+  float: right;
+  margin-top: 1.02vw;
+  margin-right: 50px;
+  position: sticky;
+  z-index: 1001;
+  background-color: #404041;
+  font-size: 1.1vw;
+  font-family: Stick;
+  color: white;
+  padding: 0.34vw;
+}

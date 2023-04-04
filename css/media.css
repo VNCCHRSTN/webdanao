@@ -1,0 +1,13 @@
+@media(max-width: 576px){
+    nav{
+      height: 120px;
+    }
+    nav a{
+        font-size:21px;	
+      height: 120px;
+    }
+    nav a:hover{
+        background:gray;
+        color:black;
+    }
+}
